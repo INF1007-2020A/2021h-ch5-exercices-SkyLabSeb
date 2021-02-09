@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+from itertools import count
 
 from typing import List
 
@@ -24,7 +24,20 @@ def use_prefixes() -> List[str]:
 
 
 def prime_integer_summation() -> int:
-    return 0
+
+    nombre = 2
+    nbr_premier = []
+    while len(nbr_premier) < 100:
+        premier = 1
+        for i in range(2, nombre):
+            if nombre % i == 0:
+                premier = 0
+                break
+        if premier == 1:
+            nbr_premier.append(nombre)
+        nombre += 1
+        
+    return sum(nbr_premier)
 
 
 def factorial(number: int) -> int:
