@@ -36,7 +36,7 @@ def prime_integer_summation() -> int:
         if premier == 1:
             nbr_premier.append(nombre)
         nombre += 1
-        
+
     return sum(nbr_premier)
 
 
@@ -45,7 +45,15 @@ def factorial(number: int) -> int:
 
 
 def use_continue() -> None:
-    pass
+
+    liste = []
+    for i in range(1, 11):
+        if i == 5:
+            continue
+        else:
+            liste.append(i)
+
+    print(liste)
 
 
 def verify_ages(groups: List[List[int]]) -> List[bool]:
