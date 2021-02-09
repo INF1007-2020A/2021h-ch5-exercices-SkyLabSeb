@@ -35,6 +35,6 @@ False
 + [False, True, False, False, True, True, True, True, False] : Mauvaise réponse
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.002s
+Ran 5 tests in 0.003s
 
 FAILED (failures=2)
